@@ -1,15 +1,13 @@
  
-import { Avatar, Container, useTheme } from "@mui/material";
+import {  Container, useTheme } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
- import Contact from '../../../public/contact-removebg-preview.png';
-import Home from "@mui/icons-material/Home";
+ import Home from "@mui/icons-material/Home";
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 export const NavTab = () => {
   const { palette } = useTheme();
-    // const location = useLocation();
     const navigate = useNavigate()
     const url =window.location.pathname
      function removeLeadingSlash(path:string) {
@@ -49,15 +47,7 @@ export const NavTab = () => {
             e.currentTarget.style.boxShadow = selected === id ? "0px 4px 10px rgba(0, 0, 0, 0.2)" : "none";
           }}
         >
-          {/* <Container sx={{
-            display:'flex',
-            flexDirection:'column',
-            justifyContent:'center',
-            alignItems:'center'
-          }}>
-            {logo}
-            {selected==id ? label : ''}
-          </Container> */}
+     
 
            <Container sx={{
             display:'flex',
@@ -102,8 +92,7 @@ const navlinks = [
     label: "Home",
     link: "/",
     logo:<Home  style={{height:'50px',color:'#ffffff'}}/>
-    // logo: <Avatar src={Home}></Avatar>,
-  },
+   },
   {
     id: 2,
     label: "Skills",
@@ -114,8 +103,7 @@ const navlinks = [
     id: 3,
     label: "Projects",
     link: "/projects",
-    // logo:<Avatar src={Projects} sx={{}}></Avatar>,
-    logo: <WorkOutlineIcon  style={{height:'50px',color:'#ffffff'}}/>
+     logo: <WorkOutlineIcon  style={{height:'50px',color:'#ffffff'}}/>
 
   },
   {
@@ -123,6 +111,5 @@ const navlinks = [
     label: "Contact",
     link: "/contact",
     logo:<PermContactCalendarIcon style={{height:'50px',color:'#ffffff'}}/>,
-    // logo:</>
-  },
+   },
 ];

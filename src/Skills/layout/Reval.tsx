@@ -1,6 +1,5 @@
- import React, { useContext, useEffect, useRef } from "react";
+ import React, { useEffect, useRef } from "react";
 import {motion,useAnimation,useInView,} from 'framer-motion'
-import { skillsContext } from "../context/skillsContext";
  
 
 

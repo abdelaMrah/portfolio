@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, scroller } from 'react-scroll';
-import { Box, Button, Fab, IconButton, useTheme } from '@mui/material';
-import { ScrollableLayout } from '../../Skills/layout/ScrollableLayout';
-import AddIcon from '@mui/icons-material/Add'
+import {  scroller } from 'react-scroll';
+import { Box,  Fab, useTheme } from '@mui/material';
+ 
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 export interface Section {
   id: string;

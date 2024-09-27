@@ -56,8 +56,7 @@ console.log(getMatrix(6))
         content:  <div ref={devopsRef}>
         <Reval id={3}>
           <DisplaySkillsColumn skills={skills['devops']} />
-          {/* <DisplaySkillsGrid skills={skills['devops']} /> */}
-
+ 
         </Reval>
        </div>
     }

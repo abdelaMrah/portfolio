@@ -9,10 +9,8 @@ import devops from '../../../public/devopa.png'
 import Grid from '@mui/material/Grid2'
 import React, { useContext } from "react"
 import { langContext } from "../../context/langContext"
-// import { NumberInput, NumberInput } from "../../components/Inputs/NumberInput"
-// import { EmailInput, EmailInput } from "../../components/Inputs/TextInput"
-
-export const Test  =({palette,typography}:{palette:any,typography:any})=>{
+ 
+export const Test  =({palette}:{palette:any,typography:any})=>{
     const {translate} = useContext(langContext)
     return(
     <Container
@@ -46,7 +44,6 @@ export const Test  =({palette,typography}:{palette:any,typography:any})=>{
                     {translate('I am an experienced backend developer skilled in building scalable systems with modern frameworks like NestJS, ASP.NET Core, and Laravel. I specialize in creating RESTful APIs, working with microservices, and using databases like PostgreSQL, MongoDB, and Redis. I focus on clean, efficient code and leverage tools like Docker to optimize deployment.')}
                     </>}
                 >
-                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam facere odio debitis beatae neque praesentium dolor inventore nesciunt doloribus porro illum explicabo assumenda sequi voluptate tempore quasi ea pariatur? */}
                 </GridItem>
                 <GridItem palette={palette} 
                     icon={<Avatar src={Front} sx={{width:'25px',height:'25px' }}></Avatar>}
@@ -55,17 +52,14 @@ export const Test  =({palette,typography}:{palette:any,typography:any})=>{
                     {translate("I have strong expertise in frontend development, focusing on creating intuitive and visually appealing user interfaces with React and TypeScript. I am skilled in implementing responsive designs using CSS and frameworks like Material-UI. My experience includes optimizing performance, integrating RESTful APIs, and ensuring cross-browser compatibility for seamless user interactions.")}
                     </>}
                 >
-                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam facere odio debitis beatae neque praesentium dolor inventore nesciunt doloribus porro illum explicabo assumenda sequi voluptate tempore quasi ea pariatur? */}
                 </GridItem>
                 <GridItem palette={palette} 
                     icon={<Avatar src={devops} sx={{width:'25px',height:'25px' }}></Avatar>}
                     title={translate('DevOps Skills')}
                     text={<>
-                        {/* I am currently deepening my knowledge of automation techniques while already having solid experience with Docker for containerization and some familiarity with Kubernetes, Ansible, and Terraform. I am focused on learning how to streamline deployment processes and improve system scalability and reliability through automation tools and infrastructure management practices. */}
                         {translate("I am currently enhancing my automation skills with solid experience in Docker for containerization and some familiarity with Kubernetes, Ansible, and Terraform. I have strong proficiency in Linux environments, managing servers, and using shell scripting to automate tasks. My goal is to streamline deployment processes and improve system scalability through effective automation and infrastructure management.")}
                     </>}
                 >
-                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam facere odio debitis beatae neque praesentium dolor inventore nesciunt doloribus porro illum explicabo assumenda sequi voluptate tempore quasi ea pariatur? */}
                 </GridItem>
                 <GridItem palette={palette} colored
                     icon={
@@ -78,7 +72,6 @@ export const Test  =({palette,typography}:{palette:any,typography:any})=>{
                         {translate("I have a solid foundation in networking and cybersecurity, with experience in managing network infrastructure, implementing firewalls, and securing systems. I understand network protocols and intrusion detection, and I apply best practices to safeguard data and mitigate vulnerabilities, ensuring system integrity against cyber threats.")}                    
                         </>}
                 >
-                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam facere odio debitis beatae neque praesentium dolor inventore nesciunt doloribus porro illum explicabo assumenda sequi voluptate tempore quasi ea pariatur? */}
                 </GridItem>
             </Grid>
 

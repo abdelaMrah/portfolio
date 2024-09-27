@@ -20,18 +20,14 @@ const logoStyle:React.CSSProperties = {
     width:'50px',
     height:'50px'
 };
-const imageStyle:React.CSSProperties ={
-    width:'fit-content',
-
-}
+ 
 
 export const projects :Project[] = [
     {
         id:1,
         title:'Commandili',
         description:`Developed a microservices platform to manage orders, production in workshops, and deliveries. Automatically selects nearby workshops and provides real-time notifications, optimizing logistics time and costs.`,
-        // description:"Commandili_description",
-        image:kubernetes,
+         image:kubernetes,
         link:'https://github.com/abdelamrah',
         technologies:[
             {

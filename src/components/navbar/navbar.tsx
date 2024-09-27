@@ -2,15 +2,12 @@ import { useTheme } from "@mui/material"
 import { SwitchDarkMode } from "../SwitchDarkMode/SwitchDarkMode"
 import { useContext } from "react"
 import { appContext } from "../../context/appContext"
-import { langContext } from "../../context/langContext"
-import { LangButton } from "../langButton/langButton"
-// import './navbar.css'
-
+ import { LangButton } from "../langButton/langButton"
+ 
 export const Navbar =()=>{
     const {palette,typography} = useTheme()
     const {setMode,mode} = useContext(appContext)
-    // const {lang,changeLang} = useContext(langContext);
-    const boxStyle:React.CSSProperties={
+     const boxStyle:React.CSSProperties={
         margin:5,
         padding:5,
         color:palette.text.primary
@@ -19,8 +16,7 @@ export const Navbar =()=>{
     return(
           <div 
            style={{
-            // backgroundColor:palette.background.default,
-            padding:5,
+             padding:5,
             display:'flex',
             justifyContent:'space-between',
             alignItems:'center',

@@ -5,12 +5,10 @@ import { StyledInputBase } from "./StyledInputBase";
 
 export const NumberInput: React.FC<{ placeholder?: string,style?:React.CSSProperties ,onChange?:(value:ReturnType<any>)=>void}> = ({ placeholder,style,onChange }) => {
     const [value, setValue] = useState('');
-    const [error, setError] = useState(false)
-    const phoneRegex = /^\+?[0-9]{10,15}$/;
+     const phoneRegex = /^\+?[0-9]{10,15}$/;
   const handleChange =(val:string)=>{
     setValue(val);
-    setError(phoneRegex.test(value))
-    console.log(phoneRegex.test(value))
+     console.log(phoneRegex.test(value))
     
     
   }

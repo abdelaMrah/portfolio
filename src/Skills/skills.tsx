@@ -24,10 +24,8 @@ import { Ts,Csharp,Python,Sql,React,Html,Css,mui,redux,reactquery,nodejs,nestjs,
     virtualisation,
     architectur,
     database} from "../assets";
-import { label } from "framer-motion/client";
-
-// import kubernetes from '../assets/kubernetes.png'
-
+ 
+ 
 
 
 export type Skill ={

@@ -15,16 +15,14 @@ export const DisplaySkillsGrid = ({skills}:{skills:Skill[]}) => {
             alignItems:'center'
         }}
     > 
-    {/* <Typography variant='h3' color='textPrimary'>
-        Frontend
-    </Typography> */}
+ 
     <Box
     sx={{
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'space-around',
-      gap: 2, // Espacement entre les cartes
-      padding: 1, // Espacement intérieur
+      gap: 2, 
+      padding: 1,
     }}
   >
     {skills.map((skill) => (
@@ -34,8 +32,8 @@ export const DisplaySkillsGrid = ({skills}:{skills:Skill[]}) => {
         textAlign: 'center',
         cursor:skill.techniques ? 'pointer':'auto',
         '&:hover': {
-          transform: skill.techniques? 'scale(1.05)':'none', // agrandit légèrement la carte
-          boxShadow: skill.techniques ? '0 8px 16px rgba(0,0,0,0.2)':'none', // ajoute une ombre plus forte
+          transform: skill.techniques? 'scale(1.05)':'none',
+          boxShadow: skill.techniques ? '0 8px 16px rgba(0,0,0,0.2)':'none',
         },  
          }}>
         <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
@@ -66,4 +64,3 @@ export const DisplaySkillsGrid = ({skills}:{skills:Skill[]}) => {
    );
 };
 
-// export default SkillDisplay;

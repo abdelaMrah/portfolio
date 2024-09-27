@@ -12,25 +12,19 @@ export const Projects = ()=>{
             id:'section1',
             title:'',
             content:<DisplaySection project={projects[0]}   />
-            // content:<div style={{backgroundColor:palette.info.light,width:'fit-content'}}>
-            //     Section 1
-            // </div>,
+      
         },
         {
             id:'section2',
             title:'',
             content:<DisplaySection project={projects[0]}   />
-            // content:<div style={{backgroundColor:palette.secondary.light,width:'fit-content'}}>
-            //     Section 2
-            // </div>,
+         
         },
         {
             id:'section3',
             title:'',
             content:<DisplaySection project={projects[0]}   />
-            // content:<div style={{backgroundColor:palette.primary.light,width:'fit-content'}}>
-            //     Section 3
-            // </div>,
+         
         },
     ]
     return (

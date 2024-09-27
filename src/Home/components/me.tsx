@@ -1,5 +1,4 @@
-import { Box, Container, Divider, List, ListItem, ListItemAvatar, ListItemText, Palette, Typography } from "@mui/material"
-import Info from "@mui/icons-material/Info"
+import { Container, Divider, List, ListItem, ListItemAvatar, ListItemText, Palette, Typography } from "@mui/material"
 import Phone from "@mui/icons-material/Phone"
 import Email from "@mui/icons-material/Email"
 import LocationCity from "@mui/icons-material/LocationCity"
@@ -50,9 +49,7 @@ const {translate} = useContext(langContext)
                 alignItems:'center'
             }}
             >
-                {/* <ContactBox label="phone" text="efrvgervg" icon={<></>} />
-                <ContactBox label="Email" text="abdela@gmail.com" icon={<></>} />
-                <ContactBox label="Location" text="Oran" icon={<></>} /> */}
+                
                 <List>
                     <ListItemBox label={translate("Phone")} text="+213795353417" icon={<Phone sx={{color:palette.primary.main}}/>} color={palette.text.primary}/>
                     <ListItemBox label="Email" text="abdela@gmail.com" icon={<Email sx={{color:palette.primary.main}}/>} color={palette.text.primary}/>
@@ -75,46 +72,7 @@ const {translate} = useContext(langContext)
 }
 
 
-const ContactBox=({label,text,icon}:{label:string,text:string,icon:any})=>{
-
-    return(
-        <Box
-        sx={{
-          textAlign: 'center',
-          position: 'relative',
-          display: 'inline-block',
-          height:'70px',
-          pb: 2, // Padding-bottom
-        }}
-      >
-        <Box display={'flex'} justifyContent={'start'} alignContent={'center'} marginTop={2} marginLeft={5}>
-            <Box width={50} height={50} alignContent={'center'}  >
-                <Info />
-            </Box>
-            <Box   display={'flex'} flexDirection={'column'} marginLeft={2} >
-                    <Typography variant="body1">
-                        {label}
-                    </Typography >
-                    <Typography  variant="body2" marginLeft={5}>
-                        {text}
-                    </Typography>
-            </Box>
-        </Box>
-
-        <Box
-          sx={{
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            bottom: 0,
-            width: '180px', // Longueur fixe de la ligne
-            borderBottom: '1px solid black', // Ligne sous le texte
-          }}
-        />
-      </Box>
-    )
-}
-
+ 
 
 const ListItemBox =({label,text,icon ,color}:{label:string,text:string,icon:any,color:any})=>{
     return(
@@ -135,7 +93,6 @@ const ListItemBox =({label,text,icon ,color}:{label:string,text:string,icon:any,
               >
                 {text}
               </Typography>
-              {/* {" — I'll be in your neighborhood doing errands this…"} */}
             </React.Fragment>
           }
         />

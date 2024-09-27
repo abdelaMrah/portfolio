@@ -21,13 +21,10 @@ export const DisplaySkillsColumn = ({skills}:{skills:Skill[]}) => {
             padding: 2,
             backgroundColor: palette.grey[100],
             borderRadius: '8px',
-            // boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
             margin:'1px'
-            // height:'70vh'
           }}
         >
-          {/* <Avatar src={lang.logo} sx={logoStyle} />
-           */}
+         
            {lang.logo}
           <Box sx={{ flexGrow: 1 ,marginLeft:3}}>
             <Typography variant="h6"  sx={{color:'black'}}>{lang.title}</Typography>
@@ -37,7 +34,6 @@ export const DisplaySkillsColumn = ({skills}:{skills:Skill[]}) => {
            {
             lang.progress ?  <ProgressBar
             value={lang.progress!}
-        //    sx={{ height: 10, borderRadius: 5, marginTop: 1 }}
          />:''
            }
           </Box>
@@ -51,4 +47,3 @@ export const DisplaySkillsColumn = ({skills}:{skills:Skill[]}) => {
    );
 };
 
-// export default SkillDisplay;

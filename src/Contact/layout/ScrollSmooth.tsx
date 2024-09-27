@@ -80,7 +80,7 @@ const ScrollSection: React.FC<ScrollSectionProps> = ({ sections }) => {
             justifyContent: 'center',
             alignItems: 'center',
             height: '90vh',
-            overflowY: 'auto', // Enable vertical scroll
+            overflowY: 'auto',  
             width: 'fit-content',
             borderBottom: '1px solid #ddd',
             backgroundColor: palette.background.default,

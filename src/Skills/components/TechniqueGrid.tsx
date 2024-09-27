@@ -1,5 +1,4 @@
-import { Box, Card, CardContent, Typography, useTheme } from '@mui/material';
-import Grid from '@mui/material/Grid2'
+import { Box, Card, CardContent, Typography } from '@mui/material';
 import { ProgressBar } from './progressBar';
 type Techinique ={
     id:number;
@@ -7,7 +6,6 @@ type Techinique ={
     logo:any;
 }
 export const TechniqueGrid =({techniques}:{techniques:Techinique[]})=>{
-    const {palette} = useTheme();
    
    
     return(
@@ -16,8 +14,8 @@ export const TechniqueGrid =({techniques}:{techniques:Techinique[]})=>{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-around',
-          gap: 2, // Espacement entre les cartes
-          padding: 1, // Espacement intérieur
+          gap: 2,
+          padding: 1,
         }}
       >
 

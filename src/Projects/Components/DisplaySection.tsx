@@ -1,6 +1,5 @@
 import { Box, Tooltip, Typography, useTheme } from "@mui/material";
 import { Project } from "../projects";
-import {useTranslation} from 'react-i18next'
 import { useContext } from "react";
 import { langContext } from "../../context/langContext";
 

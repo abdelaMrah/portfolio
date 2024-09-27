@@ -1,6 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import { QueryClient, QueryClientProvider } from "react-query"
-import {  RouterProvider } from "react-router-dom";
+ import {  RouterProvider } from "react-router-dom";
 import { routers } from "./routers";
 import {themeSettings } from "./theme";
 import i18next from "i18next";
@@ -33,17 +32,14 @@ function App() {
    
   
 
-  const client = new QueryClient();
-  const {mode} =useContext(appContext);
+   const {mode} =useContext(appContext);
   const theme =useMemo( ()=>createTheme(themeSettings(mode)),[mode])
    return (
     <>
-    <QueryClientProvider client={client}>
-      <ThemeProvider theme={theme}>
+       <ThemeProvider theme={theme}>
            <RouterProvider  router={routers} />
        </ThemeProvider>
-    </QueryClientProvider>
-     
+      
     </>
   )
 }

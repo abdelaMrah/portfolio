@@ -1,23 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
   import ScrollSmooth from './layout/ScrollSmooth';
 import { Html,aspnet,
-  mongodb,redis,rabbitmq,grpc,docker,kubernetes}from '../assets/index'
-import { html } from 'framer-motion/client';
- const scrollStyle: React.CSSProperties = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100vh', // Chaque section prend toute la hauteur de la fenêtre
-  borderBottom: '1px solid #ddd',
-};
+  redis,rabbitmq,grpc,docker,kubernetes}from '../assets/index'
+  
 
-const sections = ['section1', 'section2', 'section3', 'section4'];
-
+ 
 const Contact: React.FC = () => {
   const style :React.CSSProperties={
     width:'fit-content',
-    // height:'100vh'
-  };
+   };
     const sections = [
         {
           id: 'section1',

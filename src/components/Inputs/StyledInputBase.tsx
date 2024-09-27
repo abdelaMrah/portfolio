@@ -1,13 +1,9 @@
  
-// CustomInputs.tsx
-import React, { useEffect, useState } from 'react';
-import { InputBase, Box, InputAdornment } from '@mui/material';
+  import { InputBase } from '@mui/material';
 import { styled } from '@mui/system';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
+ 
 
-// Style générique pour les inputs
-export const StyledInputBase = styled(InputBase)(({ theme }) => ({
+ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
   padding: '10px 12px',
   border: '1px solid #ccc',
   margin:5,
@@ -21,6 +17,5 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-// Input Text
-
+ 
  
